@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"> 
+    <title>Maquetacion</title>
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+        }
+        section{
+            width: 50%;
+            height: 130vh;
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            color: black; 
+            font-family: 'Big Shoulders Text';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            font-size: 4vw;
+        }
+        h2{
+            color: gray; 
+            font-family: 'Big Shoulders Text';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            font-size: 4vw;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+        }
+        header section:first-child{
+            position: relative;
+        }
+        header section:first-child img{
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+        header section:last-child{
+            position: relative;
+        }
+        header section:last-child img{
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+        main{
+            width: 600px;
+            margin: auto;
+            font-family: 
+        }
+        main>p{
+            color: cadetblue;
+            padding: 4em 0;
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: 1px solid cadetblue;
+            text-align: justify;
+            hyphens: auto;
+            line-height: 1.4em;
+        }
+        article{
+            padding: 0 4em;
+            color: grey;
+        }
+        article p{
+            margin: 0 0 1.2em 0;
+            text-align: justify;
+            hyphens: auto;
+        }
+        article>p:first-child::first-letter{
+            color: cadetblue;
+            font-size: 8em;
+            float: left;
+            line-height: 6rem;
+            padding-left: 0.5rem;
+            padding-right: 1rem;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+        }
+        .cercle{
+            background: pink;
+            border-radius: 50%;
+            shape-outside: circle(50%) border-box;
+            float: left;
+            max-width: 13em;
+            margin-left: -4em;
+            shape-margin: 0.4em;
+        }
+        .cercle img{
+            border-radius: 50%;
+            shape-outside: circle(50%) border-box;
+        }
+        .hexagon{
+            background: pink;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
+            float: right;
+            max-width: 25em;
+            margin-right: -8em;
+            shape-outside: 0.5em;
+        }
+        .hexagon img{
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="img/img1.jpg">
+            <h1>Brandbury Thompson<br>Graphic designer</h1>
+        </section>
+        <section>
+           <img src="img/img2.jpg">
+           <h2>Toulouse Lautrec<br>Graphic designer</h2>
+        </section>
+    </header>
+    <main>
+        <p>El proyecto consistia en realizar un rediseño de dos carteles representativos de dos referentes importantes en la historia del diseño gráfico.
+        Los dos referentes serán estilos completamente opuestos, para ello, realizaremos una investigación sobre cada uno de ellos, donde podamos recopilar información sobre el estilo gráfico i conceptual de cada uno de ellos, para así realizar un panel infográfico donde clasificaremos toda la información recopilada con palabras y frases cortas.</p>
+        <article>
+            <p>Bradbury Thompson, sus trabajos se caracterizaron por el uso de figuras grandes, orgánicas y geométricas, letras ampliadas usadas como elementos de diseños para modelos visuales.Se graduó en enseñanzas artísticas en Washburn Collage, y al graduarse trabajó en Capper Publications como diseñador, y aprendió todos los aspectos de la producción de impresión. Más tarde diseño la mascota de la universidad "The Ichabod. Termino mudandose a New York donde trabajó en compañías y revistas que incluían la imprenta, como la revista "Mademoiselle". Sabía combinar tipos de letras clásicos e ilustraciones históricas con una organización tipográfica modernista. Publicó un libro "The Washburn Collage Bible" el libro presenta la tipografía Sabon de Jan Tschicold con estilo renacentista y cada capítulo comienza con reproducciones de pinturas basadas de historias bíblicas. Era coleccionista de sellos y se le reconoce por diseñar alrededor de 120 sellos en colaboración con el servicio postal de EEUU.</p>
+            <div class="cercle">
+                <img src="img/bradbury.jpg">
+            </div>
+            <p>Análisis Bradbury Thompson<br>Predominan las trasparencias y colores secundarios mediante superposición. Se pueden apreciar la creación de colores secundarios y terciarios a partir de colores primarios. Mezcla fotografía e impresión, color y forma. Las tipografías son sencillas, con remate o sin remate (mayoritariamente con remate)</p>
+            <div class="hexagon">
+                <img src="img/touluse.jpg">
+            </div>
+            <p>Toulouse Lautrec, fue alumno de Léon Bonnat. Cuando Léon Bonnat cerró su taller se buscó un nuevo maestro que fue Fernand Cormon. Más tarde abandono el estudio de Fernand Cormon y abrió su propio estudio en Montmarte y desde entonces se dedicó a la creación pictórica, integrándose en el ambiente artístico parisino. Su creación artistica se basaba en los sitios que frecuentaba. Que era el ambiente bohemio de Montmarte, donde iba a sitios como cafés, teatros, prostibulos y salas de baile. Por eso sus principales personajes eran bailarinas de cancán y personajes de circo. Al largo de su carrera realizó unos 30 carteles publicitarios de cabarés y productos comerciales.</p>
+            <p>Análisis Toulouse Lautrec<br>Utilizó las siluetas de los personajes en planos, recortados sobre un fondo también plano y con siluetas. Adapta la letra con la imagen para dar un resultado unitario. Este cartel se hizo para anunciar al popular cabaret francés, Moulin Rouge.
+            En sus carteles se pueden apreciar la relación entre imagen y texto, utiliza colores calidos como amarillos y los rojos-anaranjados. La tipografía es clara, utiliza las mayúsculas y la separación entre letras hace que sea fácil su lectura.En los personajes podemos observar movimiento</p>
+        </article>
+    </main>
+</body>
+</html>
